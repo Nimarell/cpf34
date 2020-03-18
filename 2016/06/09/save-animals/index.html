@@ -35,6 +35,7 @@ img.emoji {
 	<link rel='stylesheet' id='wp-block-library-css'  href='/cpf34/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2' type='text/css' media='all' />
 <link rel='stylesheet' id='wp-block-library-theme-css'  href='/cpf34/wp-includes/css/dist/block-library/theme.min.css?ver=5.3.2' type='text/css' media='all' />
 <link rel='stylesheet' id='contact-form-7-css'  href='/cpf34/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='wonderplugin-slider-css-css'  href='/cpf34/wp-content/plugins/wonderplugin-slider-lite/engine/wonderpluginsliderengine.css?ver=5.3.2' type='text/css' media='all' />
 <link rel='stylesheet' id='give-styles-css'  href='/cpf34/wp-content/plugins/give/assets/dist/css/give.css?ver=2.6.0' type='text/css' media='all' />
 <link rel='stylesheet' id='zeko-lite-style-css'  href='/cpf34/wp-content/themes/zeko-lite/style.css?ver=5.3.2' type='text/css' media='all' />
 <link rel='stylesheet' id='zeko-lite-fonts_url-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C300i%2C400%2C400i%2C600%2C600i%2C700%2C700i%2C800%2C800i%7COswald%3A200%2C300%2C400%2C500%2C600%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
@@ -50,7 +51,7 @@ var give_stripe_vars = {"zero_based_currency":"","zero_based_currencies_list":["
 <script type='text/javascript' src='https://checkout.stripe.com/checkout.js?ver=2.6.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var give_global_vars = {"ajaxurl":"\/wp-admin\/admin-ajax.php","checkout_nonce":"f5f44ed632","currency":"USD","currency_sign":"$","currency_pos":"before","thousands_separator":",","decimal_separator":".","no_gateway":"Veuillez s\u00e9lectionner votre mode de paiement.","bad_minimum":"Le montant du don minimum pour ce formulaire est de","bad_maximum":"Le montant maximum du don personnalis\u00e9 pour ce formulaire est","general_loading":"Chargement\u2026","purchase_loading":"Veuillez patienter\u2026","number_decimals":"2","give_version":"2.6.0","magnific_options":{"main_class":"give-modal","close_on_bg_click":false},"form_translation":{"payment-mode":"Veuillez choisir un mode de paiement","give_first":"Veuillez saisir votre pr\u00e9nom.","give_email":"Veuillez saisir une adresse de messagerie valide.","give_user_login":"Identifiant ou adresse de messagerie non valide.","give_user_pass":"Saisir un mot de passe.","give_user_pass_confirm":"Confirmer le mot de passe.","give_agree_to_terms":"Vous devez \u00eatre d\u2019accord avec les termes et conditions."},"confirm_email_sent_message":"Veuillez v\u00e9rifier votre e-mail et cliquer sur le lien pour acc\u00e9der \u00e0 votre historique complet de dons.","ajax_vars":{"ajaxurl":"\/wp-admin\/admin-ajax.php","ajaxNonce":"c2a69d36ce","loading":"En cours de chargement","select_option":"Veuillez s\u00e9lectionner une option","default_gateway":"manual","permalinks":"1","number_decimals":2},"cookie_hash":"93a4679a7eecd2a829e9f5923d2b5302","session_nonce_cookie_name":"wp-give_session_reset_nonce_93a4679a7eecd2a829e9f5923d2b5302","session_cookie_name":"wp-give_session_93a4679a7eecd2a829e9f5923d2b5302","delete_session_nonce_cookie":"0"};
+var give_global_vars = {"ajaxurl":"\/wp-admin\/admin-ajax.php","checkout_nonce":"adfa2dfff0","currency":"USD","currency_sign":"$","currency_pos":"before","thousands_separator":",","decimal_separator":".","no_gateway":"Veuillez s\u00e9lectionner votre mode de paiement.","bad_minimum":"Le montant du don minimum pour ce formulaire est de","bad_maximum":"Le montant maximum du don personnalis\u00e9 pour ce formulaire est","general_loading":"Chargement\u2026","purchase_loading":"Veuillez patienter\u2026","number_decimals":"2","give_version":"2.6.0","magnific_options":{"main_class":"give-modal","close_on_bg_click":false},"form_translation":{"payment-mode":"Veuillez choisir un mode de paiement","give_first":"Veuillez saisir votre pr\u00e9nom.","give_email":"Veuillez saisir une adresse de messagerie valide.","give_user_login":"Identifiant ou adresse de messagerie non valide.","give_user_pass":"Saisir un mot de passe.","give_user_pass_confirm":"Confirmer le mot de passe.","give_agree_to_terms":"Vous devez \u00eatre d\u2019accord avec les termes et conditions."},"confirm_email_sent_message":"Veuillez v\u00e9rifier votre e-mail et cliquer sur le lien pour acc\u00e9der \u00e0 votre historique complet de dons.","ajax_vars":{"ajaxurl":"\/wp-admin\/admin-ajax.php","ajaxNonce":"9b45eade8f","loading":"En cours de chargement","select_option":"Veuillez s\u00e9lectionner une option","default_gateway":"manual","permalinks":"1","number_decimals":2},"cookie_hash":"93a4679a7eecd2a829e9f5923d2b5302","session_nonce_cookie_name":"wp-give_session_reset_nonce_93a4679a7eecd2a829e9f5923d2b5302","session_cookie_name":"wp-give_session_93a4679a7eecd2a829e9f5923d2b5302","delete_session_nonce_cookie":"0"};
 var giveApiSettings = {"root":"\/wp-json\/give-api\/v2\/","rest_base":"give-api\/v2"};
 /* ]]> */
 </script>
@@ -62,6 +63,8 @@ var give_stripe_vars = {"zero_based_currency":"","zero_based_currencies_list":["
 </script>
 <script type='text/javascript' src='/cpf34/wp-content/plugins/give/assets/dist/js/give-stripe-checkout.js?ver=2.6.0'></script>
 <script type='text/javascript' src='/cpf34/wp-content/plugins/give/assets/dist/js/give-stripe.js?ver=2.6.0'></script>
+<script type='text/javascript' src='/cpf34/wp-content/plugins/wonderplugin-slider-lite/engine/wonderpluginsliderskins.js?ver=11.3'></script>
+<script type='text/javascript' src='/cpf34/wp-content/plugins/wonderplugin-slider-lite/engine/wonderpluginslider.js?ver=11.3'></script>
 <script type='text/javascript' src='/cpf34/wp-content/plugins/give/assets/dist/js/babel-polyfill.js?ver=2.6.0'></script>
 <link rel='https://api.w.org/' href='/cpf34/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/cpf34/xmlrpc.php?rsd" />
@@ -73,10 +76,12 @@ var give_stripe_vars = {"zero_based_currency":"","zero_based_currencies_list":["
 <link rel='shortlink' href='/cpf34/?p=2261' />
 <link rel="alternate" type="application/json+oembed" href="/cpf34/wp-json/oembed/1.0/embed?url=%2F2016%2F06%2F09%2Fsave-animals%2F" />
 <link rel="alternate" type="text/xml+oembed" href="/cpf34/wp-json/oembed/1.0/embed?url=%2F2016%2F06%2F09%2Fsave-animals%2F&#038;format=xml" />
-<meta name="generator" content="Give v2.6.0" />
+				<style type="text/css">
+					@font-face { font-family:genericons;src:url(/cpf34/wp-content/uploads/2020/03/Genericons-Regular.otf) format('opentype');font-display: auto;}				</style>
+				<meta name="generator" content="Give v2.6.0" />
 			<style type="text/css">
 			.overlay-bg {
-				opacity: 0.8;
+				opacity: 1.0;
 			}
 			</style>
 		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>	<style type="text/css">
@@ -86,7 +91,11 @@ var give_stripe_vars = {"zero_based_currency":"","zero_based_currencies_list":["
 			clip: rect(1px, 1px, 1px, 1px);
 		}
 		</style>
-			<style type="text/css" id="wp-custom-css">
+	<link rel="icon" href="/cpf34/wp-content/uploads/2020/03/favicon-150x150.png" sizes="32x32" />
+<link rel="icon" href="/cpf34/wp-content/uploads/2020/03/favicon-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="/cpf34/wp-content/uploads/2020/03/favicon-300x300.png" />
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2020/03/favicon-300x300.png" />
+		<style type="text/css" id="wp-custom-css">
 			.entry-content a.button, .button, .front-page-content-area .button, .front-page-content-area .entry-content a.button {
 		background: #1B96D3;
 		border-bottom: 2px solid #1B96D3
@@ -106,7 +115,6 @@ var give_stripe_vars = {"zero_based_currency":"","zero_based_currencies_list":["
 
 .overlay-bg {
 	background: #0D1732;
-	opacity: 0.7;
 }
 
 a, a:visited {
@@ -276,10 +284,10 @@ a:hover {
 	</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="social-links"><ul id="menu-social-menu" class="menu"><li id="menu-item-1455" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1455"><a href="https://www.facebook.com/Anariel.Design/"><span class="screen-reader-text">Facebook</span></a></li>
-<li id="menu-item-1456" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1456"><a href="https://www.twitter.com/"><span class="screen-reader-text">Twitter</span></a></li>
-<li id="menu-item-1457" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1457"><a href="http://pinterest.com/"><span class="screen-reader-text">Pinterest</span></a></li>
-<li id="menu-item-1458" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1458"><a href="http://instagram.com/"><span class="screen-reader-text">Instagram</span></a></li>
+		<div class="social-links"><ul id="menu-reseaux-sociaux" class="menu"><li id="menu-item-3564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3564"><a href="https://www.facebook.com/"><span class="screen-reader-text"><i class="fab fa-facebook-square"></i></span></a></li>
+<li id="menu-item-3565" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3565"><a href="https://www.twitter.com/"><span class="screen-reader-text"><i class="fab fa-twitter-square"></i></span></a></li>
+<li id="menu-item-3566" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3566"><a href="https://www.pinterest.com/"><span class="screen-reader-text"><i class="fab fa-pinterest-square"></i></span></a></li>
+<li id="menu-item-3567" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3567"><a href="https://www.instagram.com/"><span class="screen-reader-text"><i class="fab fa-instagram-square"></i></span></a></li>
 </ul></div>
 
 
@@ -332,7 +340,7 @@ Siren: 500 848 924</p>
 			   value="1.00"/>
 		<input type="hidden" name="give-form-maximum"
 			   value="999999.99"/>
-		<input type="hidden"  name="give-form-hash" value="6f25b6a341" data-time="1584530668" data-nonce-life="86400" data-donor-session="0"/>		<div class="give-total-wrap">
+		<input type="hidden"  name="give-form-hash" value="597343a4c7" data-time="1584542918" data-nonce-life="86400" data-donor-session="0"/>		<div class="give-total-wrap">
 			<div class="give-donation-amount form-row-wide">
 				<span class="give-currency-symbol give-currency-position-before">&#36;</span>				<label class="give-hidden" for="give-amount">Montant du don :</label>
 				<input class="give-text-input give-amount-top" id="give-amount" name="give-amount" type="tel"
