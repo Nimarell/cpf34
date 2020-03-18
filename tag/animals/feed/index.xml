@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>animals &#8211; CPF34 Conseil de la Protection Féline de l&#039;Hérault</title>
+	<atom:link href="/cpf34/tag/animals/feed/" rel="self" type="application/rss+xml" />
+	<link>/cpf34</link>
+	<description>Un site utilisant WordPress</description>
+	<lastBuildDate>Tue, 06 Dec 2016 11:03:11 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+	<item>
+		<title>Don&#8217;t eat me</title>
+		<link>/cpf34/2016/12/06/dont-at-me/</link>
+				<comments>/cpf34/2016/12/06/dont-at-me/#comments</comments>
+				<pubDate>Tue, 06 Dec 2016 11:03:11 +0000</pubDate>
+		<dc:creator><![CDATA[delormeyann09@gmail.com]]></dc:creator>
+				<category><![CDATA[animals]]></category>
+		<category><![CDATA[donate]]></category>
+
+		<guid isPermaLink="false">http://www.anarieldesign.com/themedemos/liber/?p=281</guid>
+				<description><![CDATA[Over the centuries humans domesticated many animals with the main purpose being producing food. However, these animals are living sentient beings and we should treat them with respect while they are alive. Factory farming is not our future. Donec aliquam eleifend metus, eget iaculis ante vestibulum id. Nulla facilisi. Nullam interdum sagittis accumsan. Phasellus egestas [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>Over the centuries humans domesticated many animals with the main purpose being producing food. However, these animals are living sentient beings and we should treat them with respect while they are alive. Factory farming is not our future.</p>
+<p><span id="more-281"></span></p>
+<p>Donec aliquam eleifend metus, eget iaculis ante vestibulum id. Nulla facilisi. Nullam interdum sagittis accumsan. Phasellus egestas elementum enim nec condimentum. Sed mattis purus odio. Curabitur vehicula rutrum porttitor. Phasellus tempus dui id turpis fermentum, auctor dictum mauris mollis.</p>
+<p>Curabitur orci ipsum, sodales vel ullamcorper sit amet, porta sed leo. Curabitur mattis lorem lectus, eu auctor felis mattis sit amet. Aliquam nibh justo, pharetra vel gravida sit amet, dictum vel massa. Sed pulvinar ante turpis, at lobortis urna pharetra in. Nulla facilisi. Mauris neque magna, gravida nec consequat sit amet, sagittis nec neque. Duis et faucibus arcu. Duis ultricies pharetra mauris, sed volutpat nulla dignissim vel. Aenean et viverra urna. Aenean condimentum leo sed pharetra lobortis. Mauris finibus erat vel ultricies pharetra. Suspendisse mollis a diam quis dignissim. Curabitur lacinia dolor et rhoncus facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis, ipsum quis rutrum sodales, dui ex venenatis nisi, et gravida turpis libero a enim.</p>
+]]></content:encoded>
+							<wfw:commentRss>/cpf34/2016/12/06/dont-at-me/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+	</channel>
+</rss>
