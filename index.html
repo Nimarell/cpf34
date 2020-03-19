@@ -50,7 +50,7 @@ var give_stripe_vars = {"zero_based_currency":"","zero_based_currencies_list":["
 <script type='text/javascript' src='https://checkout.stripe.com/checkout.js?ver=2.6.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var give_global_vars = {"ajaxurl":"\/wp-admin\/admin-ajax.php","checkout_nonce":"adfa2dfff0","currency":"USD","currency_sign":"$","currency_pos":"before","thousands_separator":",","decimal_separator":".","no_gateway":"Veuillez s\u00e9lectionner votre mode de paiement.","bad_minimum":"Le montant du don minimum pour ce formulaire est de","bad_maximum":"Le montant maximum du don personnalis\u00e9 pour ce formulaire est","general_loading":"Chargement\u2026","purchase_loading":"Veuillez patienter\u2026","number_decimals":"2","give_version":"2.6.0","magnific_options":{"main_class":"give-modal","close_on_bg_click":false},"form_translation":{"payment-mode":"Veuillez choisir un mode de paiement","give_first":"Veuillez saisir votre pr\u00e9nom.","give_email":"Veuillez saisir une adresse de messagerie valide.","give_user_login":"Identifiant ou adresse de messagerie non valide.","give_user_pass":"Saisir un mot de passe.","give_user_pass_confirm":"Confirmer le mot de passe.","give_agree_to_terms":"Vous devez \u00eatre d\u2019accord avec les termes et conditions."},"confirm_email_sent_message":"Veuillez v\u00e9rifier votre e-mail et cliquer sur le lien pour acc\u00e9der \u00e0 votre historique complet de dons.","ajax_vars":{"ajaxurl":"\/wp-admin\/admin-ajax.php","ajaxNonce":"9b45eade8f","loading":"En cours de chargement","select_option":"Veuillez s\u00e9lectionner une option","default_gateway":"manual","permalinks":"1","number_decimals":2},"cookie_hash":"93a4679a7eecd2a829e9f5923d2b5302","session_nonce_cookie_name":"wp-give_session_reset_nonce_93a4679a7eecd2a829e9f5923d2b5302","session_cookie_name":"wp-give_session_93a4679a7eecd2a829e9f5923d2b5302","delete_session_nonce_cookie":"0"};
+var give_global_vars = {"ajaxurl":"\/wp-admin\/admin-ajax.php","checkout_nonce":"6f0d4af422","currency":"USD","currency_sign":"$","currency_pos":"before","thousands_separator":",","decimal_separator":".","no_gateway":"Veuillez s\u00e9lectionner votre mode de paiement.","bad_minimum":"Le montant du don minimum pour ce formulaire est de","bad_maximum":"Le montant maximum du don personnalis\u00e9 pour ce formulaire est","general_loading":"Chargement\u2026","purchase_loading":"Veuillez patienter\u2026","number_decimals":"2","give_version":"2.6.0","magnific_options":{"main_class":"give-modal","close_on_bg_click":false},"form_translation":{"payment-mode":"Veuillez choisir un mode de paiement","give_first":"Veuillez saisir votre pr\u00e9nom.","give_email":"Veuillez saisir une adresse de messagerie valide.","give_user_login":"Identifiant ou adresse de messagerie non valide.","give_user_pass":"Saisir un mot de passe.","give_user_pass_confirm":"Confirmer le mot de passe.","give_agree_to_terms":"Vous devez \u00eatre d\u2019accord avec les termes et conditions."},"confirm_email_sent_message":"Veuillez v\u00e9rifier votre e-mail et cliquer sur le lien pour acc\u00e9der \u00e0 votre historique complet de dons.","ajax_vars":{"ajaxurl":"\/wp-admin\/admin-ajax.php","ajaxNonce":"d1febeddc7","loading":"En cours de chargement","select_option":"Veuillez s\u00e9lectionner une option","default_gateway":"manual","permalinks":"1","number_decimals":2},"cookie_hash":"93a4679a7eecd2a829e9f5923d2b5302","session_nonce_cookie_name":"wp-give_session_reset_nonce_93a4679a7eecd2a829e9f5923d2b5302","session_cookie_name":"wp-give_session_93a4679a7eecd2a829e9f5923d2b5302","delete_session_nonce_cookie":"0"};
 var giveApiSettings = {"root":"\/wp-json\/give-api\/v2\/","rest_base":"give-api\/v2"};
 /* ]]> */
 </script>
@@ -122,6 +122,12 @@ a:hover {
 	color: #0D1732;
 }
 
+.entry-content p a:hover:not(.button) {
+	background: none;
+	text-decoration: underline #1B96D3;
+	color: #1B96D3;
+}
+
 .amazingslider-bottom-shadow-1 {
 	opacity: 0
 }
@@ -142,6 +148,44 @@ a:hover {
 	background: url("/cpf34/wp-content/plugins/wonderplugin-slider-lite/engine/bullet-24-24-0.png") left bottom no-repeat !important;
 }
 
+.entry-content a {
+	border-bottom: none;
+	border-radius: 0;
+}
+
+.entry-content a:hover {
+	background-color: #1B96D3;
+}
+
+.entry-content .stats-button  .wp-block-button {
+	margin-top: -1em;
+}
+
+.entry-content .stats-button  .wp-block-image h2 {
+	margin-top: -4.5em;
+	font-size: 3.5em;
+	color: white;
+}
+
+.entry-content .stats-button  .wp-block-image h3 {
+	margin-top: -1.6em;
+	font-size: 1.8em;
+	color: white;
+}
+.entry-content .stats-button  .wp-block-image .overlay {
+	background-color: #0D1732;
+}
+.entry-content .stats-button  .wp-block-image .overlay:hover {
+	background-color: #1B96D3;
+}
+.entry-content .stats-button  .wp-block-image .overlay img {
+	opacity: 0.5;
+}
+
+.give-submit-button-wrap input {
+	background: #1B96D3;
+}
+
 @media screen and (min-width: 60em) {
 	.site-branding {
 		padding: 0;
@@ -159,10 +203,19 @@ a:hover {
 	.main-navigation a:hover, .main-navigation a:focus, .main-navigation .current-menu-item a {
 		border-bottom: 3px solid #1B96D3;
 	}
+	
+	.stats {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.stats-button {
+		flex-basis: calc(25% - 16px)
+	}
 }		</style>
 		</head>
 
-<body class="home page-template-default page page-id-1448 page-parent wp-custom-logo give-test-mode give-page zeko-front-page elementor-default">
+<body class="home page-template-default page page-id-1448 page-parent wp-custom-logo give-test-mode give-page zeko-front-page">
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
@@ -295,80 +348,215 @@ par arrêté préfectoral, après avis favorable du Centre National d&rsquo;Etud
 			</footer>
 	</div>
 </article><!-- #post-## -->
-		</div><!-- .child-pages -->
-	</article><!-- #post-## -->
-							
-	</main><!-- #main -->
-</div><!-- #primary -->
+<article id="post-3584" class="post-3584 page type-page status-publish hentry">
+	<div class="clear">
+	<div class="twocolumn">
+		</div><!-- .twocolumn -->
+
+	<div class="twocolumn">
+	<header class="entry-header">
+		<h2 class="entry-title">Nos actions</h2>	</header>
+	<div class="entry-content">
+		
+<div class="wp-block-button aligncenter"><a class="wp-block-button__link">Comptes-rendus</a></div>
 
 
-	</div>
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="social-links"><ul id="menu-reseaux-sociaux" class="menu"><li id="menu-item-3564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3564"><a href="https://www.facebook.com/"><span class="screen-reader-text"><i class="fab fa-facebook-square"></i></span></a></li>
-<li id="menu-item-3565" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3565"><a href="https://www.twitter.com/"><span class="screen-reader-text"><i class="fab fa-twitter-square"></i></span></a></li>
-<li id="menu-item-3566" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3566"><a href="https://www.pinterest.com/"><span class="screen-reader-text"><i class="fab fa-pinterest-square"></i></span></a></li>
-<li id="menu-item-3567" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3567"><a href="https://www.instagram.com/"><span class="screen-reader-text"><i class="fab fa-instagram-square"></i></span></a></li>
-</ul></div>
-
-
-	<aside class="widget-area-block" role="complementary">
-		<div class="wrap">
-			<div class="widget-area footer-widget-area">
-									<div id="widget-area-2" class="widget-area">
-						<section id="text-3" class="widget widget_text"><h2 class="widget-title">A propos</h2>			<div class="textwidget"><p><img class="alignnone  wp-image-3495" src="/cpf34/wp-content/uploads/2020/03/logo-1-300x300.png" alt="" width="99" height="99" /></p>
-<p>Conseil de Protection Féline de l’Hérault<br />
-Association loi 1901 d’intérêt général<br />
-Siren: 500 848 924</p>
-<p><strong>Adresse postale:</strong> CPF34<br />
-662, Avenue de la Justice<br />
-34090 MONTPELLIER</p>
-<p><strong>Téléphone:</strong> 06 68 39 66 80</p>
-<p><strong>Email: <span class="color"><a href="mailto:cpf34.asso@gmail.com">cpf34.asso@gmail.com</a></span></strong></p>
+<div class="stats">
+<div class="stats-button">
+<div<figure class="wp-block-image size-large"><div class="overlay"><img src="/cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-1024x1024.jpg" alt="" class="wp-image-3521" srcset="/cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-1024x1024.jpg 1024w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-300x300.jpg 300w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-150x150.jpg 150w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-768x768.jpg 768w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-700x700.jpg 700w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480.jpg 1440w" sizes="(max-width: 1024px) 100vw, 1024px" /></div><h2 class="aligncenter">283</h2><h3 class="aligncenter">Stérilisations</h3><h3 class="aligncenter">en 2009</h3></figure><div class="wp-block-button aligncenter"><a class="wp-block-button__link">PDF</a></div>
 </div>
-		</section>					</div><!-- #widget-area-2 -->
-				
-									<div id="widget-area-3" class="widget-area">
-						<section id="media_image-3" class="widget widget_media_image"><img width="450" height="438" src="/cpf34/wp-content/uploads/2020/03/cat-40855302-1-e1584528733915.png" class="image wp-image-3523  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" /></section>					</div><!-- #widget-area-3 -->
-				
-									<div id="widget-area-4" class="widget-area">
-						<section id="give_forms_widget-2" class="widget widget_give_forms_widget"><h2 class="widget-title">Faire un don</h2>	<div id="give-form-1322-wrap" class="give-form-wrap give-display-modal">
-		<h2 class="give-form-title">Food</h2><div class="give-goal-progress">
-	        <div class="raised">
-			<span class="income" data-amounts="{    &quot;USD&quot;: &quot;80000.000000&quot;}">&#036;80,000</span> of <span class="goal-text" data-amounts="{    &quot;USD&quot;: 900000}">&#036;900,000</span> raised        </div>
-	
+<div class="stats-button">
+<div<figure class="wp-block-image size-large"><div class="overlay"><img src="/cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-1024x1024.jpg" alt="" class="wp-image-3521" srcset="/cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-1024x1024.jpg 1024w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-300x300.jpg 300w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-150x150.jpg 150w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-768x768.jpg 768w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-700x700.jpg 700w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480.jpg 1440w" sizes="(max-width: 1024px) 100vw, 1024px" /></div><h2 class="aligncenter">590</h2><h3 class="aligncenter">Stérilisations</h3><h3 class="aligncenter">en 2010</h3></figure><div class="wp-block-button aligncenter"><a class="wp-block-button__link">PDF</a></div>
+</div>
+<div class="stats-button">
+<div<figure class="wp-block-image size-large"><div class="overlay"><img src="/cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-1024x1024.jpg" alt="" class="wp-image-3521" srcset="/cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-1024x1024.jpg 1024w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-300x300.jpg 300w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-150x150.jpg 150w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-768x768.jpg 768w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-700x700.jpg 700w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480.jpg 1440w" sizes="(max-width: 1024px) 100vw, 1024px" /></div><h2 class="aligncenter">959</h2><h3 class="aligncenter">Stérilisations</h3><h3 class="aligncenter">en 2011</h3></figure><div class="wp-block-button aligncenter"><a class="wp-block-button__link">PDF</a></div>
+</div>
+<div class="stats-button">
+<div<figure class="wp-block-image size-large"><div class="overlay"><img src="/cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-1024x1024.jpg" alt="" class="wp-image-3521" srcset="/cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-1024x1024.jpg 1024w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-300x300.jpg 300w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-150x150.jpg 150w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-768x768.jpg 768w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480-700x700.jpg 700w, /cpf34/wp-content/uploads/2020/03/cat-61079_1920-e1584607817480.jpg 1440w" sizes="(max-width: 1024px) 100vw, 1024px" /></div><h2 class="aligncenter">1195</h2><h3 class="aligncenter">Stérilisations</h3><h3 class="aligncenter">en 2012</h3></figure><div class="wp-block-button aligncenter"><a class="wp-block-button__link">PDF</a></div>
+</div>
+</div>
+	</div><!-- .twocolumn -->
+	</div><!-- .clear -->
+	<footer class="entry-footer">
+			</footer>
+	</div>
+</article><!-- #post-## -->
+<article id="post-3632" class="post-3632 page type-page status-publish hentry">
+	<div class="clear">
+	<div class="twocolumn">
+		</div><!-- .twocolumn -->
 
-	        <div class="give-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"
-             aria-valuenow="8.89">
-			<span style="width: 8.89%;background-color:#9e0022"></span>
-        </div><!-- /.give-progress-bar -->
-	
-</div><!-- /.goal-progress -->
-<div class="give_error give_warning" id="give_error_test_mode"><p><strong>Avertissement</strong> Le mode de test est activé. En mode de test, aucune transaction réelle n’est effectuée.</p></div>			<form id="give-form-1322-1" class="give-form give-form-1322 give-form-type-set" action="/cpf34/?payment-mode=manual" data-id="1322-1" data-currency_symbol="&#36;" data-currency_code="USD" data-currency_position="before" data-thousands_separator="," data-decimal_separator="." data-number_decimals="2" method="post">
+	<div class="twocolumn">
+	<header class="entry-header">
+		<h2 class="entry-title">Les communes</h2>	</header>
+	<div class="entry-content">
+		
+<h2>Montpellier</h2>
+
+
+
+<p>Sur la commune de MONTPELLIER&nbsp;<a href="http://www.montpellier.fr/2822-l-animal-en-ville.htm#toced_headerH2_6"><strong>L&rsquo;UNITÉ DE CAPTURE</strong></a>&nbsp;est là pour vous aider pour tout problème de chats errants.</p>
+
+
+
+<h3>tél : 04 99 58 80 26</h3>
+
+
+
+<p>Gestion de l&rsquo;animal en ville</p>
+
+
+
+<ul><li>Délivrance des permis de détention des chiens de 1ère et de 2ème catégorie</li><li>Suivi des animaux mordeurs ou griffeurs</li><li>Unité de capture</li></ul>
+
+
+
+<p>a) Capture sur voie publique d&rsquo;animaux présentant un danger grave et immédiat (mise en fourrière)<br>b) Capture de chats errants en vue de leur stérilisation et de leur identification avant de les relâcher sur leur lieu de vie.</p>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<h2>Autres communes</h2>
+
+
+
+<p>Le CPF a signé des conventions avec certaines communes qui prennent en charge les chats errants de la même manière que Montpellier.<br><a href="https://cpf34.com/index.php?page=lescommunes&amp;liste=1">Liste des communes</a></p>
+
+
+
+<p>D&rsquo;autres n&rsquo;ont pas encore de convention.<br>Aidez nous à les convaincre :<br><a href="https://cpf34.com/index.php?page=lescommunes&amp;comment=1">Comment faire ?</a></p>
+	</div><!-- .twocolumn -->
+	</div><!-- .clear -->
+	<footer class="entry-footer">
+			</footer>
+	</div>
+</article><!-- #post-## -->
+<article id="post-3643" class="post-3643 page type-page status-publish hentry">
+	<div class="clear">
+	<div class="twocolumn">
+		</div><!-- .twocolumn -->
+
+	<div class="twocolumn">
+	<header class="entry-header">
+		<h2 class="entry-title">Articles</h2>	</header>
+	<div class="entry-content">
+		
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="jetpack-video-wrapper"><iframe title="Un chat sexy jusqu&#039;au bout des griffes" width="700" height="394" src="https://www.youtube.com/embed/2kUctEWahxc?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div></figure>
+
+
+
+<p>Sultan a eu 67 partenaires, 321 descendants.<br>C&rsquo;est un irresponsable.<br>Mais pas autant que son maître.<br><strong>Faites stériliser votre animal.</strong></p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="jetpack-video-wrapper"><iframe title="Un chat sexy jusqu&#039;au bout des griffes" width="700" height="394" src="https://www.youtube.com/embed/2kUctEWahxc?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div></figure>
+
+
+
+<p>Sultan a eu 67 partenaires, 321 descendants.<br>C&rsquo;est un irresponsable.<br>Mais pas autant que son maître.<br><strong>Faites stériliser votre animal.</strong></p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="jetpack-video-wrapper"><iframe title="Un chat sexy jusqu&#039;au bout des griffes" width="700" height="394" src="https://www.youtube.com/embed/2kUctEWahxc?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div></figure>
+
+
+
+<p>Sultan a eu 67 partenaires, 321 descendants.<br>C&rsquo;est un irresponsable.<br>Mais pas autant que son maître.<br><strong>Faites stériliser votre animal.</strong></p>
+</div>
+</div>
+
+
+
+<p></p>
+	</div><!-- .twocolumn -->
+	</div><!-- .clear -->
+	<footer class="entry-footer">
+			</footer>
+	</div>
+</article><!-- #post-## -->
+<article id="post-3651" class="post-3651 page type-page status-publish hentry">
+	<div class="clear">
+	<div class="twocolumn">
+		</div><!-- .twocolumn -->
+
+	<div class="twocolumn">
+	<header class="entry-header">
+		<h2 class="entry-title">Contact</h2>	</header>
+	<div class="entry-content">
+		
+<p class="has-text-align-center">
+
+Conseil de Protection Féline de l’Hérault<br>Association loi 1901 d’intérêt général<br>Siren: 500 848 924</p>
+
+
+
+<p class="has-text-align-center">Adresse postale:<br>CPF34<br>662, Avenue de la Justice<br>34090 MONTPELLIER</p>
+
+
+
+<p class="has-text-align-center">06 68 39 66 80<br><a href="mailto:cpf34.asso@gmail.com">cpf34.asso@gmail.com</a></p>
+
+
+
+<div class="wpforms-container wpforms-container-full" id="wpforms-3647"><form id="wpforms-form-3647" class="wpforms-validate wpforms-form" data-formid="3647" method="post" enctype="multipart/form-data" action="/cpf34/"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-3647-field_0-container" class="wpforms-field wpforms-field-name" data-field-id="0"><label class="wpforms-field-label" for="wpforms-3647-field_0">Nom <span class="wpforms-required-label">*</span></label><div class="wpforms-field-row wpforms-field-medium"><div class="wpforms-field-row-block wpforms-first wpforms-one-half"><input type="text" id="wpforms-3647-field_0" class="wpforms-field-name-first wpforms-field-required" name="wpforms[fields][0][first]" required><label for="wpforms-3647-field_0" class="wpforms-field-sublabel after">Prénom</label></div><div class="wpforms-field-row-block wpforms-one-half"><input type="text" id="wpforms-3647-field_0-last" class="wpforms-field-name-last wpforms-field-required" name="wpforms[fields][0][last]" required><label for="wpforms-3647-field_0-last" class="wpforms-field-sublabel after">Nom</label></div></div></div><div id="wpforms-3647-field_4-container" class="wpforms-field wpforms-field-text" data-field-id="4"><label class="wpforms-field-label" for="wpforms-3647-field_4">Numéro de téléphone</label><input type="text" id="wpforms-3647-field_4" class="wpforms-field-medium" name="wpforms[fields][4]" ></div><div id="wpforms-3647-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><label class="wpforms-field-label" for="wpforms-3647-field_1">E-mail <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-3647-field_1" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][1]" required></div><div id="wpforms-3647-field_2-container" class="wpforms-field wpforms-field-textarea" data-field-id="2"><label class="wpforms-field-label" for="wpforms-3647-field_2">Commentaire ou message <span class="wpforms-required-label">*</span></label><textarea id="wpforms-3647-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" required></textarea></div></div><div class="wpforms-field wpforms-field-hp"><label for="wpforms-3647-field-hp" class="wpforms-field-label">Message</label><input type="text" name="wpforms[hp]" id="wpforms-3647-field-hp" class="wpforms-field-medium"></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="3647"><input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="3651"><button type="submit" name="wpforms[submit]" class="wpforms-submit" id="wpforms-submit-3647" value="wpforms-submit" aria-live="assertive" data-alt-text="Envoi..." data-submit-text="Envoyer">Envoyer</button></div></form></div>  <!-- .wpforms-container --><div></div>
+	</div><!-- .twocolumn -->
+	</div><!-- .clear -->
+	<footer class="entry-footer">
+			</footer>
+	</div>
+</article><!-- #post-## -->
+<article id="post-3662" class="post-3662 page type-page status-publish hentry">
+	<div class="clear">
+	<div class="twocolumn">
+		</div><!-- .twocolumn -->
+
+	<div class="twocolumn">
+	<header class="entry-header">
+		<h2 class="entry-title">Aidez-nous</h2>	</header>
+	<div class="entry-content">
+		
+	<div id="give-form-3659-wrap" class="give-form-wrap give-display-onpage">
+		<h2 class="give-form-title">Faire un don</h2><div class="give_error give_warning" id="give_error_test_mode"><p><strong>Avertissement</strong> Le mode de test est activé. En mode de test, aucune transaction réelle n’est effectuée.</p></div>			<form id="give-form-3659-1" class="give-form give-form-3659 give-form-type-set" action="/cpf34/?payment-mode=manual" data-id="3659-1" data-currency_symbol="&#36;" data-currency_code="USD" data-currency_position="before" data-thousands_separator="," data-decimal_separator="." data-number_decimals="2" method="post">
 				<!-- The following field is for robots only, invisible to humans: -->
 				<span class="give-hidden" style="display: none !important;">
-					<label for="give-form-honeypot-1322"></label>
-					<input id="give-form-honeypot-1322" type="text" name="give-honeypot"
+					<label for="give-form-honeypot-3659"></label>
+					<input id="give-form-honeypot-3659" type="text" name="give-honeypot"
 						   class="give-honeypot give-hidden"/>
 				</span>
 
-					<input type="hidden" name="give-form-id-prefix" value="1322-1"/>
-	<input type="hidden" name="give-form-id" value="1322"/>
-	<input type="hidden" name="give-form-title" value="Food"/>
+					<input type="hidden" name="give-form-id-prefix" value="3659-1"/>
+	<input type="hidden" name="give-form-id" value="3659"/>
+	<input type="hidden" name="give-form-title" value="Faire un don"/>
 	<input type="hidden" name="give-current-url" value="/"/>
 	<input type="hidden" name="give-form-url" value="/"/>
 			<input type="hidden" name="give-form-minimum"
 			   value="1.00"/>
 		<input type="hidden" name="give-form-maximum"
 			   value="999999.99"/>
-		<input type="hidden"  name="give-form-hash" value="597343a4c7" data-time="1584551139" data-nonce-life="86400" data-donor-session="0"/>		<div class="give-total-wrap">
+		<input type="hidden"  name="give-form-hash" value="e0d14ff8dd" data-time="1584614535" data-nonce-life="86400" data-donor-session="0"/>		<div class="give-total-wrap">
 			<div class="give-donation-amount form-row-wide">
 				<span class="give-currency-symbol give-currency-position-before">&#36;</span>				<label class="give-hidden" for="give-amount">Montant du don :</label>
 				<input class="give-text-input give-amount-top" id="give-amount" name="give-amount" type="tel"
 					   placeholder="" value="1.00" autocomplete="off">
 							</div>
 		</div>
-		<button type="button" class="give-btn give-btn-modal">Donnez maintenant</button><input id="give-stripe-payment-method-1322-1" type="hidden" name="give_stripe_payment_method" value="">
+		<input id="give-stripe-payment-method-3659-1" type="hidden" name="give_stripe_payment_method" value="">
 	<fieldset id="give-payment-mode-select"
 			>
 				<legend
@@ -381,28 +569,28 @@ Siren: 500 848 924</p>
 						<ul id="give-gateway-radio-list">
 										<li class="give-gateway-option-selected">
 							<input type="radio" name="payment-mode" class="give-gateway"
-								   id="give-gateway-manual-1322-1"
+								   id="give-gateway-manual-3659-1"
 								   value="manual" checked='checked'>
 
-														<label for="give-gateway-manual-1322-1"
+														<label for="give-gateway-manual-3659-1"
 								   class="give-gateway-option"
 								   id="give-gateway-option-manual"> Don de Test</label>
 						</li>
 												<li>
 							<input type="radio" name="payment-mode" class="give-gateway"
-								   id="give-gateway-offline-1322-1"
+								   id="give-gateway-offline-3659-1"
 								   value="offline">
 
-														<label for="give-gateway-offline-1322-1"
+														<label for="give-gateway-offline-3659-1"
 								   class="give-gateway-option"
 								   id="give-gateway-option-offline"> Don hors ligne</label>
 						</li>
 												<li>
 							<input type="radio" name="payment-mode" class="give-gateway"
-								   id="give-gateway-stripe-1322-1"
+								   id="give-gateway-stripe-3659-1"
 								   value="stripe">
 
-														<label for="give-gateway-stripe-1322-1"
+														<label for="give-gateway-stripe-3659-1"
 								   class="give-gateway-option"
 								   id="give-gateway-option-stripe"> Credit Card</label>
 						</li>
@@ -467,7 +655,209 @@ Siren: 500 848 924</p>
 
 		
 					</fieldset>
-	<div id="give-stripe-payment-errors-1322-1"></div>	<fieldset id="give_purchase_submit" class="give-donation-submit">
+	<div id="give-stripe-payment-errors-3659-1"></div>	<fieldset id="give_purchase_submit" class="give-donation-submit">
+			<p id="give-final-total-wrap" class="form-wrap">
+				<span class="give-donation-total-label">
+			Total du don :		</span>
+		<span class="give-final-total-amount"
+			  data-total="1.00">
+			&#36;1.00		</span>
+			</p>
+		<input type="hidden" name="give_action" value="purchase"/>
+	<input type="hidden" name="give-gateway" value="manual"/>
+		<div class="give-submit-button-wrap give-clearfix">
+		<input type="submit" class="give-submit give-btn" id="give-purchase-button" name="give-purchase"
+			   value="Donnez maintenant" data-before-validation-label="Donnez maintenant"/>
+		<span class="give-loading-animation"></span>
+	</div>
+		</fieldset>
+	
+	</div>
+
+				</form>
+
+			
+	</div><!--end #give-form-3659-->
+	
+	</div><!-- .twocolumn -->
+	</div><!-- .clear -->
+	<footer class="entry-footer">
+			</footer>
+	</div>
+</article><!-- #post-## -->
+		</div><!-- .child-pages -->
+	</article><!-- #post-## -->
+							
+	</main><!-- #main -->
+</div><!-- #primary -->
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="social-links"><ul id="menu-reseaux-sociaux" class="menu"><li id="menu-item-3564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3564"><a href="https://www.facebook.com/"><span class="screen-reader-text"><i class="fab fa-facebook-square"></i></span></a></li>
+<li id="menu-item-3565" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3565"><a href="https://www.twitter.com/"><span class="screen-reader-text"><i class="fab fa-twitter-square"></i></span></a></li>
+<li id="menu-item-3566" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3566"><a href="https://www.pinterest.com/"><span class="screen-reader-text"><i class="fab fa-pinterest-square"></i></span></a></li>
+<li id="menu-item-3567" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3567"><a href="https://www.instagram.com/"><span class="screen-reader-text"><i class="fab fa-instagram-square"></i></span></a></li>
+</ul></div>
+
+
+	<aside class="widget-area-block" role="complementary">
+		<div class="wrap">
+			<div class="widget-area footer-widget-area">
+									<div id="widget-area-2" class="widget-area">
+						<section id="text-3" class="widget widget_text"><h2 class="widget-title">A propos</h2>			<div class="textwidget"><p><img class="alignnone  wp-image-3495" src="/cpf34/wp-content/uploads/2020/03/logo-1-300x300.png" alt="" width="99" height="99" /></p>
+<p>Conseil de Protection Féline de l’Hérault<br />
+Association loi 1901 d’intérêt général<br />
+Siren: 500 848 924</p>
+<p><strong>Adresse postale:</strong> CPF34<br />
+662, Avenue de la Justice<br />
+34090 MONTPELLIER</p>
+<p><strong>Téléphone:</strong> 06 68 39 66 80</p>
+<p><strong>Email: <span class="color"><a href="mailto:cpf34.asso@gmail.com">cpf34.asso@gmail.com</a></span></strong></p>
+</div>
+		</section>					</div><!-- #widget-area-2 -->
+				
+									<div id="widget-area-3" class="widget-area">
+						<section id="media_image-3" class="widget widget_media_image"><img width="450" height="438" src="/cpf34/wp-content/uploads/2020/03/cat-40855302-1-e1584528733915.png" class="image wp-image-3523  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" /></section>					</div><!-- #widget-area-3 -->
+				
+									<div id="widget-area-4" class="widget-area">
+						<section id="give_forms_widget-2" class="widget widget_give_forms_widget"><h2 class="widget-title">Faire un don</h2>	<div id="give-form-1322-wrap" class="give-form-wrap give-display-modal">
+		<h2 class="give-form-title">Food</h2><div class="give-goal-progress">
+	        <div class="raised">
+			<span class="income" data-amounts="{    &quot;USD&quot;: &quot;80000.000000&quot;}">&#036;80,000</span> of <span class="goal-text" data-amounts="{    &quot;USD&quot;: 900000}">&#036;900,000</span> raised        </div>
+	
+
+	        <div class="give-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+             aria-valuenow="8.89">
+			<span style="width: 8.89%;background-color:#9e0022"></span>
+        </div><!-- /.give-progress-bar -->
+	
+</div><!-- /.goal-progress -->
+<div class="give_error give_warning" id="give_error_test_mode"><p><strong>Avertissement</strong> Le mode de test est activé. En mode de test, aucune transaction réelle n’est effectuée.</p></div>			<form id="give-form-1322-2" class="give-form give-form-1322 give-form-type-set" action="/cpf34/?payment-mode=manual" data-id="1322-2" data-currency_symbol="&#36;" data-currency_code="USD" data-currency_position="before" data-thousands_separator="," data-decimal_separator="." data-number_decimals="2" method="post">
+				<!-- The following field is for robots only, invisible to humans: -->
+				<span class="give-hidden" style="display: none !important;">
+					<label for="give-form-honeypot-1322"></label>
+					<input id="give-form-honeypot-1322" type="text" name="give-honeypot"
+						   class="give-honeypot give-hidden"/>
+				</span>
+
+					<input type="hidden" name="give-form-id-prefix" value="1322-2"/>
+	<input type="hidden" name="give-form-id" value="1322"/>
+	<input type="hidden" name="give-form-title" value="Food"/>
+	<input type="hidden" name="give-current-url" value="/"/>
+	<input type="hidden" name="give-form-url" value="/"/>
+			<input type="hidden" name="give-form-minimum"
+			   value="1.00"/>
+		<input type="hidden" name="give-form-maximum"
+			   value="999999.99"/>
+		<input type="hidden"  name="give-form-hash" value="f299ce7522" data-time="1584614535" data-nonce-life="86400" data-donor-session="0"/>		<div class="give-total-wrap">
+			<div class="give-donation-amount form-row-wide">
+				<span class="give-currency-symbol give-currency-position-before">&#36;</span>				<label class="give-hidden" for="give-amount">Montant du don :</label>
+				<input class="give-text-input give-amount-top" id="give-amount" name="give-amount" type="tel"
+					   placeholder="" value="1.00" autocomplete="off">
+							</div>
+		</div>
+		<button type="button" class="give-btn give-btn-modal">Donnez maintenant</button><input id="give-stripe-payment-method-1322-2" type="hidden" name="give_stripe_payment_method" value="">
+	<fieldset id="give-payment-mode-select"
+			>
+				<legend
+			class="give-payment-mode-label">Sélectionnez le mode de paiement			<span class="give-loading-text"><span
+					class="give-loading-animation"></span>
+			</span>
+		</legend>
+
+		<div id="give-payment-mode-wrap">
+						<ul id="give-gateway-radio-list">
+										<li class="give-gateway-option-selected">
+							<input type="radio" name="payment-mode" class="give-gateway"
+								   id="give-gateway-manual-1322-2"
+								   value="manual" checked='checked'>
+
+														<label for="give-gateway-manual-1322-2"
+								   class="give-gateway-option"
+								   id="give-gateway-option-manual"> Don de Test</label>
+						</li>
+												<li>
+							<input type="radio" name="payment-mode" class="give-gateway"
+								   id="give-gateway-offline-1322-2"
+								   value="offline">
+
+														<label for="give-gateway-offline-1322-2"
+								   class="give-gateway-option"
+								   id="give-gateway-option-offline"> Don hors ligne</label>
+						</li>
+												<li>
+							<input type="radio" name="payment-mode" class="give-gateway"
+								   id="give-gateway-stripe-1322-2"
+								   value="stripe">
+
+														<label for="give-gateway-stripe-1322-2"
+								   class="give-gateway-option"
+								   id="give-gateway-option-stripe"> Credit Card</label>
+						</li>
+									</ul>
+					</div>
+			</fieldset>
+
+	
+	<div id="give_purchase_form_wrap">
+
+			<fieldset id="give_checkout_user_info" class="">
+		<legend>
+			Informations personnelles		</legend>
+
+		
+		<p id="give-first-name-wrap" class="form-row form-row-first form-row-responsive">
+			<label class="give-label" for="give-first">
+				Prénom									<span class="give-required-indicator">*</span>
+								<span class="give-tooltip hint--top hint--medium hint--bounce" aria-label="Le prénom est utilisé pour personnaliser votre don." rel="tooltip"><i class="give-icon give-icon-question"></i></span>			</label>
+			<input
+				class="give-input required"
+				type="text"
+				name="give_first"
+				autocomplete="given-name"
+				placeholder="Prénom"
+				id="give-first"
+				value=""
+				 required aria-required="true" 			/>
+		</p>
+
+		<p id="give-last-name-wrap" class="form-row form-row-last form-row-responsive">
+			<label class="give-label" for="give-last">
+				Nom								<span class="give-tooltip hint--top hint--medium hint--bounce" aria-label="Le nom est utilisé pour personnaliser votre don." rel="tooltip"><i class="give-icon give-icon-question"></i></span>			</label>
+
+			<input
+				class="give-input"
+				type="text"
+				name="give_last"
+				autocomplete="family-name"
+				id="give-last"
+				placeholder="Nom"
+				value=""
+							/>
+		</p>
+
+		
+				<p id="give-email-wrap" class="form-row form-row-wide">
+			<label class="give-label" for="give-email">
+				Adresse e-mail									<span class="give-required-indicator">*</span>
+								<span class="give-tooltip hint--top hint--medium hint--bounce" aria-label="Le reçu de don sera envoyé à cette adresse." rel="tooltip"><i class="give-icon give-icon-question"></i></span>			</label>
+			<input
+				class="give-input required"
+				type="email"
+				name="give_email"
+				autocomplete="email"
+				placeholder="Adresse e-mail"
+				id="give-email"
+				value=""
+				 required aria-required="true" 			/>
+
+		</p>
+
+		
+					</fieldset>
+	<div id="give-stripe-payment-errors-1322-2"></div>	<fieldset id="give_purchase_submit" class="give-donation-submit">
 			<p id="give-final-total-wrap" class="form-wrap">
 				<span class="give-donation-total-label">
 			Total du don :		</span>
@@ -503,6 +893,8 @@ Siren: 500 848 924</p>
 </div><!-- .site-info -->
 	</footer>
 </div><!-- #page -->
+<link rel='stylesheet' id='jetpack-responsive-videos-style-css'  href='/cpf34/wp-content/plugins/jetpack/modules/theme-tools/responsive-videos/responsive-videos.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wpforms-full-css'  href='/cpf34/wp-content/plugins/wpforms-lite/assets/css/wpforms-full.css?ver=1.5.9.1' type='text/css' media='all' />
 <script type='text/javascript'>
 /* <![CDATA[ */
 var wpcf7 = {"apiSettings":{"root":"\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
@@ -512,6 +904,15 @@ var wpcf7 = {"apiSettings":{"root":"\/wp-json\/contact-form-7\/v1","namespace":"
 <script type='text/javascript' src='/cpf34/wp-content/themes/zeko-lite/assets/js/navigation.js?ver=1.0'></script>
 <script type='text/javascript' src='/cpf34/wp-content/themes/zeko-lite/assets/js/skip-link-focus-fix.js?ver=1.0'></script>
 <script type='text/javascript' src='/cpf34/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='/cpf34/wp-content/plugins/jetpack/modules/theme-tools/responsive-videos/responsive-videos.min.js?ver=1.3'></script>
+<script type='text/javascript' src='/cpf34/wp-content/plugins/wpforms-lite/assets/js/jquery.validate.min.js?ver=1.19.0'></script>
+<script type='text/javascript' src='/cpf34/wp-content/plugins/wpforms-lite/assets/js/mailcheck.min.js?ver=1.1.2'></script>
+<script type='text/javascript' src='/cpf34/wp-content/plugins/wpforms-lite/assets/js/wpforms.js?ver=1.5.9.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpforms_settings = {"val_required":"Ce champ est n\u00e9cessaire","val_url":"Veuillez saisir une URL valide.","val_email":"Veuillez saisir une adresse e-mail valide.","val_email_suggestion":"Voulez-vous dire {suggestion} ?","val_email_suggestion_title":"Cliquez pour accepter cette suggestion.","val_number":"Veuillez saisir un nombre valide.","val_confirm":"Les valeurs du champ ne correspondent pas.","val_fileextension":"Le type de fichier n\u2019est pas autoris\u00e9.","val_filesize":"File exceeds max size allowed. File was not uploaded.","val_time12h":"Veuillez saisir l\u2019heure au format 12 heures AM\/PM (Ex : 8h45 AM).","val_time24h":"Veuillez saisir l\u2019heure au format 24 heures (Ex : 22:45).","val_requiredpayment":"Le paiement est n\u00e9cessaire.","val_creditcard":"Veuillez saisir un num\u00e9ro de carte bancaire valide.","val_post_max_size":"La taille totale des fichiers s\u00e9lectionn\u00e9s {totalSize} d\u00e9passe la limite autoris\u00e9e de {maxSize} Mo.","val_checklimit":"Vous avez d\u00e9pass\u00e9 le nombre de s\u00e9lections autoris\u00e9es : {#}.","val_limit_characters":"{count} of {limit} max characters.","val_limit_words":"{count} of {limit} max words.","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again later.","post_max_size":"8388608","uuid_cookie":"","locale":"fr","wpforms_plugin_url":"\/wp-content\/plugins\/wpforms-lite\/","gdpr":"","ajaxurl":"\/wp-admin\/admin-ajax.php","mailcheck_enabled":"1","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"]}
+/* ]]> */
+</script>
 
 </body>
 </html>

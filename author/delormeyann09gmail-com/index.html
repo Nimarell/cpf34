@@ -51,7 +51,7 @@ var give_stripe_vars = {"zero_based_currency":"","zero_based_currencies_list":["
 <script type='text/javascript' src='https://checkout.stripe.com/checkout.js?ver=2.6.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var give_global_vars = {"ajaxurl":"\/wp-admin\/admin-ajax.php","checkout_nonce":"adfa2dfff0","currency":"USD","currency_sign":"$","currency_pos":"before","thousands_separator":",","decimal_separator":".","no_gateway":"Veuillez s\u00e9lectionner votre mode de paiement.","bad_minimum":"Le montant du don minimum pour ce formulaire est de","bad_maximum":"Le montant maximum du don personnalis\u00e9 pour ce formulaire est","general_loading":"Chargement\u2026","purchase_loading":"Veuillez patienter\u2026","number_decimals":"2","give_version":"2.6.0","magnific_options":{"main_class":"give-modal","close_on_bg_click":false},"form_translation":{"payment-mode":"Veuillez choisir un mode de paiement","give_first":"Veuillez saisir votre pr\u00e9nom.","give_email":"Veuillez saisir une adresse de messagerie valide.","give_user_login":"Identifiant ou adresse de messagerie non valide.","give_user_pass":"Saisir un mot de passe.","give_user_pass_confirm":"Confirmer le mot de passe.","give_agree_to_terms":"Vous devez \u00eatre d\u2019accord avec les termes et conditions."},"confirm_email_sent_message":"Veuillez v\u00e9rifier votre e-mail et cliquer sur le lien pour acc\u00e9der \u00e0 votre historique complet de dons.","ajax_vars":{"ajaxurl":"\/wp-admin\/admin-ajax.php","ajaxNonce":"9b45eade8f","loading":"En cours de chargement","select_option":"Veuillez s\u00e9lectionner une option","default_gateway":"manual","permalinks":"1","number_decimals":2},"cookie_hash":"93a4679a7eecd2a829e9f5923d2b5302","session_nonce_cookie_name":"wp-give_session_reset_nonce_93a4679a7eecd2a829e9f5923d2b5302","session_cookie_name":"wp-give_session_93a4679a7eecd2a829e9f5923d2b5302","delete_session_nonce_cookie":"0"};
+var give_global_vars = {"ajaxurl":"\/wp-admin\/admin-ajax.php","checkout_nonce":"6f0d4af422","currency":"USD","currency_sign":"$","currency_pos":"before","thousands_separator":",","decimal_separator":".","no_gateway":"Veuillez s\u00e9lectionner votre mode de paiement.","bad_minimum":"Le montant du don minimum pour ce formulaire est de","bad_maximum":"Le montant maximum du don personnalis\u00e9 pour ce formulaire est","general_loading":"Chargement\u2026","purchase_loading":"Veuillez patienter\u2026","number_decimals":"2","give_version":"2.6.0","magnific_options":{"main_class":"give-modal","close_on_bg_click":false},"form_translation":{"payment-mode":"Veuillez choisir un mode de paiement","give_first":"Veuillez saisir votre pr\u00e9nom.","give_email":"Veuillez saisir une adresse de messagerie valide.","give_user_login":"Identifiant ou adresse de messagerie non valide.","give_user_pass":"Saisir un mot de passe.","give_user_pass_confirm":"Confirmer le mot de passe.","give_agree_to_terms":"Vous devez \u00eatre d\u2019accord avec les termes et conditions."},"confirm_email_sent_message":"Veuillez v\u00e9rifier votre e-mail et cliquer sur le lien pour acc\u00e9der \u00e0 votre historique complet de dons.","ajax_vars":{"ajaxurl":"\/wp-admin\/admin-ajax.php","ajaxNonce":"d1febeddc7","loading":"En cours de chargement","select_option":"Veuillez s\u00e9lectionner une option","default_gateway":"manual","permalinks":"1","number_decimals":2},"cookie_hash":"93a4679a7eecd2a829e9f5923d2b5302","session_nonce_cookie_name":"wp-give_session_reset_nonce_93a4679a7eecd2a829e9f5923d2b5302","session_cookie_name":"wp-give_session_93a4679a7eecd2a829e9f5923d2b5302","delete_session_nonce_cookie":"0"};
 var giveApiSettings = {"root":"\/wp-json\/give-api\/v2\/","rest_base":"give-api\/v2"};
 /* ]]> */
 </script>
@@ -119,6 +119,12 @@ a:hover {
 	color: #0D1732;
 }
 
+.entry-content p a:hover:not(.button) {
+	background: none;
+	text-decoration: underline #1B96D3;
+	color: #1B96D3;
+}
+
 .amazingslider-bottom-shadow-1 {
 	opacity: 0
 }
@@ -139,6 +145,44 @@ a:hover {
 	background: url("/cpf34/wp-content/plugins/wonderplugin-slider-lite/engine/bullet-24-24-0.png") left bottom no-repeat !important;
 }
 
+.entry-content a {
+	border-bottom: none;
+	border-radius: 0;
+}
+
+.entry-content a:hover {
+	background-color: #1B96D3;
+}
+
+.entry-content .stats-button  .wp-block-button {
+	margin-top: -1em;
+}
+
+.entry-content .stats-button  .wp-block-image h2 {
+	margin-top: -4.5em;
+	font-size: 3.5em;
+	color: white;
+}
+
+.entry-content .stats-button  .wp-block-image h3 {
+	margin-top: -1.6em;
+	font-size: 1.8em;
+	color: white;
+}
+.entry-content .stats-button  .wp-block-image .overlay {
+	background-color: #0D1732;
+}
+.entry-content .stats-button  .wp-block-image .overlay:hover {
+	background-color: #1B96D3;
+}
+.entry-content .stats-button  .wp-block-image .overlay img {
+	opacity: 0.5;
+}
+
+.give-submit-button-wrap input {
+	background: #1B96D3;
+}
+
 @media screen and (min-width: 60em) {
 	.site-branding {
 		padding: 0;
@@ -156,10 +200,19 @@ a:hover {
 	.main-navigation a:hover, .main-navigation a:focus, .main-navigation .current-menu-item a {
 		border-bottom: 3px solid #1B96D3;
 	}
+	
+	.stats {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.stats-button {
+		flex-basis: calc(25% - 16px)
+	}
 }		</style>
 		</head>
 
-<body class="archive author author-delormeyann09gmail-com author-1 wp-custom-logo give-test-mode give-page hfeed no-header-image has-sidebar elementor-default">
+<body class="archive author author-delormeyann09gmail-com author-1 wp-custom-logo give-test-mode give-page hfeed no-header-image has-sidebar">
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
@@ -498,7 +551,7 @@ Siren: 500 848 924</p>
 			   value="1.00"/>
 		<input type="hidden" name="give-form-maximum"
 			   value="999999.99"/>
-		<input type="hidden"  name="give-form-hash" value="597343a4c7" data-time="1584551159" data-nonce-life="86400" data-donor-session="0"/>		<div class="give-total-wrap">
+		<input type="hidden"  name="give-form-hash" value="f299ce7522" data-time="1584614554" data-nonce-life="86400" data-donor-session="0"/>		<div class="give-total-wrap">
 			<div class="give-donation-amount form-row-wide">
 				<span class="give-currency-symbol give-currency-position-before">&#36;</span>				<label class="give-hidden" for="give-amount">Montant du don :</label>
 				<input class="give-text-input give-amount-top" id="give-amount" name="give-amount" type="tel"
