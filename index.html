@@ -35,6 +35,7 @@ img.emoji {
 <link rel='stylesheet' id='wp-block-library-theme-css'  href='/cpf34/wp-includes/css/dist/block-library/theme.min.css?ver=5.3.2' type='text/css' media='all' />
 <link rel='stylesheet' id='contact-form-7-css'  href='/cpf34/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.7' type='text/css' media='all' />
 <link rel='stylesheet' id='wonderplugin-slider-css-css'  href='/cpf34/wp-content/plugins/wonderplugin-slider-lite/engine/wonderpluginsliderengine.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wpfront-scroll-top-css'  href='/cpf34/wp-content/plugins/wpfront-scroll-top/css/wpfront-scroll-top.min.css?ver=2.0.2' type='text/css' media='all' />
 <link rel='stylesheet' id='give-styles-css'  href='/cpf34/wp-content/plugins/give/assets/dist/css/give.css?ver=2.6.0' type='text/css' media='all' />
 <link rel='stylesheet' id='zeko-lite-style-css'  href='/cpf34/wp-content/themes/zeko-lite/style.css?ver=5.3.2' type='text/css' media='all' />
 <link rel='stylesheet' id='zeko-lite-fonts_url-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C300i%2C400%2C400i%2C600%2C600i%2C700%2C700i%2C800%2C800i%7COswald%3A200%2C300%2C400%2C500%2C600%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
@@ -50,7 +51,7 @@ var give_stripe_vars = {"zero_based_currency":"","zero_based_currencies_list":["
 <script type='text/javascript' src='https://checkout.stripe.com/checkout.js?ver=2.6.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var give_global_vars = {"ajaxurl":"\/wp-admin\/admin-ajax.php","checkout_nonce":"6f0d4af422","currency":"USD","currency_sign":"$","currency_pos":"before","thousands_separator":",","decimal_separator":".","no_gateway":"Veuillez s\u00e9lectionner votre mode de paiement.","bad_minimum":"Le montant du don minimum pour ce formulaire est de","bad_maximum":"Le montant maximum du don personnalis\u00e9 pour ce formulaire est","general_loading":"Chargement\u2026","purchase_loading":"Veuillez patienter\u2026","number_decimals":"2","give_version":"2.6.0","magnific_options":{"main_class":"give-modal","close_on_bg_click":false},"form_translation":{"payment-mode":"Veuillez choisir un mode de paiement","give_first":"Veuillez saisir votre pr\u00e9nom.","give_email":"Veuillez saisir une adresse de messagerie valide.","give_user_login":"Identifiant ou adresse de messagerie non valide.","give_user_pass":"Saisir un mot de passe.","give_user_pass_confirm":"Confirmer le mot de passe.","give_agree_to_terms":"Vous devez \u00eatre d\u2019accord avec les termes et conditions."},"confirm_email_sent_message":"Veuillez v\u00e9rifier votre e-mail et cliquer sur le lien pour acc\u00e9der \u00e0 votre historique complet de dons.","ajax_vars":{"ajaxurl":"\/wp-admin\/admin-ajax.php","ajaxNonce":"d1febeddc7","loading":"En cours de chargement","select_option":"Veuillez s\u00e9lectionner une option","default_gateway":"manual","permalinks":"1","number_decimals":2},"cookie_hash":"93a4679a7eecd2a829e9f5923d2b5302","session_nonce_cookie_name":"wp-give_session_reset_nonce_93a4679a7eecd2a829e9f5923d2b5302","session_cookie_name":"wp-give_session_93a4679a7eecd2a829e9f5923d2b5302","delete_session_nonce_cookie":"0"};
+var give_global_vars = {"ajaxurl":"\/wp-admin\/admin-ajax.php","checkout_nonce":"b4750a8205","currency":"USD","currency_sign":"$","currency_pos":"before","thousands_separator":",","decimal_separator":".","no_gateway":"Veuillez s\u00e9lectionner votre mode de paiement.","bad_minimum":"Le montant du don minimum pour ce formulaire est de","bad_maximum":"Le montant maximum du don personnalis\u00e9 pour ce formulaire est","general_loading":"Chargement\u2026","purchase_loading":"Veuillez patienter\u2026","number_decimals":"2","give_version":"2.6.0","magnific_options":{"main_class":"give-modal","close_on_bg_click":false},"form_translation":{"payment-mode":"Veuillez choisir un mode de paiement","give_first":"Veuillez saisir votre pr\u00e9nom.","give_email":"Veuillez saisir une adresse de messagerie valide.","give_user_login":"Identifiant ou adresse de messagerie non valide.","give_user_pass":"Saisir un mot de passe.","give_user_pass_confirm":"Confirmer le mot de passe.","give_agree_to_terms":"Vous devez \u00eatre d\u2019accord avec les termes et conditions."},"confirm_email_sent_message":"Veuillez v\u00e9rifier votre e-mail et cliquer sur le lien pour acc\u00e9der \u00e0 votre historique complet de dons.","ajax_vars":{"ajaxurl":"\/wp-admin\/admin-ajax.php","ajaxNonce":"73c6ff8e24","loading":"En cours de chargement","select_option":"Veuillez s\u00e9lectionner une option","default_gateway":"manual","permalinks":"1","number_decimals":2},"cookie_hash":"93a4679a7eecd2a829e9f5923d2b5302","session_nonce_cookie_name":"wp-give_session_reset_nonce_93a4679a7eecd2a829e9f5923d2b5302","session_cookie_name":"wp-give_session_93a4679a7eecd2a829e9f5923d2b5302","delete_session_nonce_cookie":"0"};
 var giveApiSettings = {"root":"\/wp-json\/give-api\/v2\/","rest_base":"give-api\/v2"};
 /* ]]> */
 </script>
@@ -93,7 +94,10 @@ var give_stripe_vars = {"zero_based_currency":"","zero_based_currencies_list":["
 <link rel="apple-touch-icon-precomposed" href="/cpf34/wp-content/uploads/2020/03/favicon-300x300.png" />
 <meta name="msapplication-TileImage" content="/wp-content/uploads/2020/03/favicon-300x300.png" />
 		<style type="text/css" id="wp-custom-css">
-			.entry-content a.button, .button, .front-page-content-area .button, .front-page-content-area .entry-content a.button {
+			html {
+	scroll-behavior: smooth;
+}
+.entry-content a.button, .button, .front-page-content-area .button, .front-page-content-area .entry-content a.button {
 		background: #1B96D3;
 		border-bottom: 2px solid #1B96D3
 	}
@@ -114,7 +118,7 @@ var give_stripe_vars = {"zero_based_currency":"","zero_based_currencies_list":["
 	background: #0D1732;
 }
 
-a, a:visited {
+a {
 	color: #1B96D3;
 }
 
@@ -194,6 +198,24 @@ a:hover {
 	background: #0D1732;
 }
 
+div.wpforms-container-full .wpforms-form button[type=submit] {
+	background-color: #0D1732 !important;
+	color: white !important;
+}
+
+div.wpforms-container-full .wpforms-form button[type=submit]:hover {
+	background-color: #1B96D3 !important;
+}
+
+.entry-content {
+	position: relative
+}
+
+.entry-content .anchor-helper {
+	position: absolute;
+	top: 20em;
+}
+
 @media screen and (min-width: 60em) {
 	.site-branding {
 		padding: 0;
@@ -203,13 +225,17 @@ a:hover {
 	}
 	.main-navigation li.color>a {
 		background: #1B96D3;
-		border-bottom: 3px solid #1B96D3;
+		border-bottom: none;
 	}
 	.main-navigation li.color>a:hover {
 		background: #0D1732
 	}
 	.main-navigation a:hover, .main-navigation a:focus, .main-navigation .current-menu-item a {
 		border-bottom: 3px solid #1B96D3;
+	}
+	
+	.main-navigation ul ul a:hover, .main-navigation ul ul a:focus, .main-navigation ul .current-menu-item ul li a, .main-navigation ul .current-menu-item ul ul li a, .main-navigation li.color a, .main-navigation li.color a:hover, .main-navigation .sub-menu .current-menu-item a, .main-navigation .sub-menu a {
+		border-bottom: none;
 	}
 	
 	.stats {
@@ -243,12 +269,12 @@ a:hover {
 </div><!-- .site-branding -->
 				<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Top Menu">
 	<button class="menu-toggle" aria-controls="top-menu" aria-expanded="false">Menu</button>
-	<div class="menu-top-menu-container"><ul id="top-menu" class="menu"><li id="menu-item-3537" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3537"><a href="">Présentation</a></li>
-<li id="menu-item-3538" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3538"><a href="">Nos actions</a></li>
-<li id="menu-item-3539" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3539"><a href="">Les communes</a></li>
-<li id="menu-item-3540" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3540"><a href="">Articles</a></li>
-<li id="menu-item-3541" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3541"><a href="">Contact</a></li>
-<li id="menu-item-3053" class="color menu-item menu-item-type-custom menu-item-object-custom menu-item-3053"><a href="https://www.anarieldesign.com/themes/nonprofit-wordpress-theme/">Aidez-nous</a></li>
+	<div class="menu-top-menu-container"><ul id="top-menu" class="menu"><li id="menu-item-3537" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3537"><a href="#presentation">Présentation</a></li>
+<li id="menu-item-3538" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3538"><a href="#actions">Nos actions</a></li>
+<li id="menu-item-3539" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3539"><a href="#locality">Les communes</a></li>
+<li id="menu-item-3540" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3540"><a href="#articles">Articles</a></li>
+<li id="menu-item-3541" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3541"><a href="#contact">Contact</a></li>
+<li id="menu-item-3053" class="color menu-item menu-item-type-custom menu-item-object-custom menu-item-3053"><a href="#help-us">Aidez-nous</a></li>
 </ul></div></nav><!-- #site-navigation -->
 			</div>
 		</div><!-- .header-top -->
@@ -299,17 +325,17 @@ a:hover {
 	<header class="entry-header">
 		<h2 class="entry-title">Présentation</h2>	</header>
 	<div class="entry-content">
-		<p>L&rsquo;association CPF 34, créée en 2005, rassemble des personnes ou groupes déjà actifs dans la protection animale.<br>Elle intervient en tant que conseil auprès de particuliers, syndics, institutions et mairies.<br>L&rsquo;association a pour objectif principal la régulation des populations de chats libres par la stérilisation, l&rsquo;identification et le maintien sur leur territoire.<br>Elle sollicite les mairies pour faire appliquer l&rsquo;article 211-27 du code rural.</p>
+		
+<span id="presentation" class="anchor-helper"></span>
+
+
+<p>L&rsquo;association CPF 34, créée en 2005, rassemble des personnes ou groupes déjà actifs dans la protection animale.<br>Elle intervient en tant que conseil auprès de particuliers, syndics, institutions et mairies.<br>L&rsquo;association a pour objectif principal la régulation des populations de chats libres par la stérilisation, l&rsquo;identification et le maintien sur leur territoire.<br>Elle sollicite les mairies pour faire appliquer l&rsquo;article 211-27 du code rural.</p>
 <p>De par cette action, elle :</p>
 <ul>
 <li><strong>Protège les populations de chats errants</strong></li>
 <li><strong>Evite les maladies</strong></li>
 <li><strong>Améliore les relations Humain / Animal</strong></li>
-</ul>
-
-
-<p></p>
-	</div><!-- .twocolumn -->
+</ul>	</div><!-- .twocolumn -->
 	</div><!-- .clear -->
 	<footer class="entry-footer">
 			</footer>
@@ -366,6 +392,10 @@ par arrêté préfectoral, après avis favorable du Centre National d&rsquo;Etud
 		<h2 class="entry-title">Nos actions</h2>	</header>
 	<div class="entry-content">
 		
+<span id="actions" class="anchor-helper"></span>
+
+
+
 <div class="wp-block-button aligncenter"><a class="wp-block-button__link">Comptes-rendus</a></div>
 
 
@@ -400,6 +430,10 @@ par arrêté préfectoral, après avis favorable du Centre National d&rsquo;Etud
 		<h2 class="entry-title">Les communes</h2>	</header>
 	<div class="entry-content">
 		
+<span id="locality" class="anchor-helper"></span>
+
+
+
 <h2>Montpellier</h2>
 
 
@@ -453,6 +487,10 @@ par arrêté préfectoral, après avis favorable du Centre National d&rsquo;Etud
 		<h2 class="entry-title">Articles</h2>	</header>
 	<div class="entry-content">
 		
+<span id="articles" class="anchor-helper"></span>
+
+
+
 <div class="wp-block-columns">
 <div class="wp-block-column">
 <figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
@@ -488,10 +526,6 @@ par arrêté préfectoral, après avis favorable du Centre National d&rsquo;Etud
 <p>Sultan a eu 67 partenaires, 321 descendants.<br>C&rsquo;est un irresponsable.<br>Mais pas autant que son maître.<br><strong>Faites stériliser votre animal.</strong></p>
 </div>
 </div>
-
-
-
-<p></p>
 	</div><!-- .twocolumn -->
 	</div><!-- .clear -->
 	<footer class="entry-footer">
@@ -510,7 +544,11 @@ par arrêté préfectoral, après avis favorable du Centre National d&rsquo;Etud
 		<h2 class="entry-title">Contact</h2>	</header>
 	<div class="entry-content">
 		
-<div class="wpforms-container wpforms-container-full" id="wpforms-3647"><form id="wpforms-form-3647" class="wpforms-validate wpforms-form" data-formid="3647" method="post" enctype="multipart/form-data" action="/cpf34/"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-3647-field_0-container" class="wpforms-field wpforms-field-name" data-field-id="0"><label class="wpforms-field-label" for="wpforms-3647-field_0">Nom <span class="wpforms-required-label">*</span></label><div class="wpforms-field-row wpforms-field-medium"><div class="wpforms-field-row-block wpforms-first wpforms-one-half"><input type="text" id="wpforms-3647-field_0" class="wpforms-field-name-first wpforms-field-required" name="wpforms[fields][0][first]" required><label for="wpforms-3647-field_0" class="wpforms-field-sublabel after">Prénom</label></div><div class="wpforms-field-row-block wpforms-one-half"><input type="text" id="wpforms-3647-field_0-last" class="wpforms-field-name-last wpforms-field-required" name="wpforms[fields][0][last]" required><label for="wpforms-3647-field_0-last" class="wpforms-field-sublabel after">Nom</label></div></div></div><div id="wpforms-3647-field_4-container" class="wpforms-field wpforms-field-text" data-field-id="4"><label class="wpforms-field-label" for="wpforms-3647-field_4">Numéro de téléphone</label><input type="text" id="wpforms-3647-field_4" class="wpforms-field-medium" name="wpforms[fields][4]" ></div><div id="wpforms-3647-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><label class="wpforms-field-label" for="wpforms-3647-field_1">E-mail <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-3647-field_1" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][1]" required></div><div id="wpforms-3647-field_2-container" class="wpforms-field wpforms-field-textarea" data-field-id="2"><label class="wpforms-field-label" for="wpforms-3647-field_2">Commentaire ou message <span class="wpforms-required-label">*</span></label><textarea id="wpforms-3647-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" required></textarea></div></div><div class="wpforms-field wpforms-field-hp"><label for="wpforms-3647-field-hp" class="wpforms-field-label">Email</label><input type="text" name="wpforms[hp]" id="wpforms-3647-field-hp" class="wpforms-field-medium"></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="3647"><input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="3651"><button type="submit" name="wpforms[submit]" class="wpforms-submit" id="wpforms-submit-3647" value="wpforms-submit" aria-live="assertive" data-alt-text="Envoi..." data-submit-text="Envoyer">Envoyer</button></div></form></div>  <!-- .wpforms-container --><div></div>
+<span id="contact" class="anchor-helper"></span>
+
+
+
+<div class="wpforms-container wpforms-container-full" id="wpforms-3647"><form id="wpforms-form-3647" class="wpforms-validate wpforms-form" data-formid="3647" method="post" enctype="multipart/form-data" action="/cpf34/"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-3647-field_0-container" class="wpforms-field wpforms-field-name" data-field-id="0"><label class="wpforms-field-label" for="wpforms-3647-field_0">Nom <span class="wpforms-required-label">*</span></label><div class="wpforms-field-row wpforms-field-medium"><div class="wpforms-field-row-block wpforms-first wpforms-one-half"><input type="text" id="wpforms-3647-field_0" class="wpforms-field-name-first wpforms-field-required" name="wpforms[fields][0][first]" required><label for="wpforms-3647-field_0" class="wpforms-field-sublabel after">Prénom</label></div><div class="wpforms-field-row-block wpforms-one-half"><input type="text" id="wpforms-3647-field_0-last" class="wpforms-field-name-last wpforms-field-required" name="wpforms[fields][0][last]" required><label for="wpforms-3647-field_0-last" class="wpforms-field-sublabel after">Nom</label></div></div></div><div id="wpforms-3647-field_4-container" class="wpforms-field wpforms-field-text" data-field-id="4"><label class="wpforms-field-label" for="wpforms-3647-field_4">Numéro de téléphone</label><input type="text" id="wpforms-3647-field_4" class="wpforms-field-medium" name="wpforms[fields][4]" ></div><div id="wpforms-3647-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><label class="wpforms-field-label" for="wpforms-3647-field_1">E-mail <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-3647-field_1" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][1]" required></div><div id="wpforms-3647-field_2-container" class="wpforms-field wpforms-field-textarea" data-field-id="2"><label class="wpforms-field-label" for="wpforms-3647-field_2">Commentaire ou message <span class="wpforms-required-label">*</span></label><textarea id="wpforms-3647-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" required></textarea></div></div><div class="wpforms-field wpforms-field-hp"><label for="wpforms-3647-field-hp" class="wpforms-field-label">Name</label><input type="text" name="wpforms[hp]" id="wpforms-3647-field-hp" class="wpforms-field-medium"></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="3647"><input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="3651"><button type="submit" name="wpforms[submit]" class="wpforms-submit" id="wpforms-submit-3647" value="wpforms-submit" aria-live="assertive" data-alt-text="Envoi..." data-submit-text="Envoyer">Envoyer</button></div></form></div>  <!-- .wpforms-container --><div></div>
 	</div><!-- .twocolumn -->
 	</div><!-- .clear -->
 	<footer class="entry-footer">
@@ -527,6 +565,66 @@ par arrêté préfectoral, après avis favorable du Centre National d&rsquo;Etud
 		<h2 class="entry-title">Aidez-nous</h2>	</header>
 	<div class="entry-content">
 		
+<span id="help-us" class="anchor-helper"></span>
+
+
+
+<p>Notre objectif : Sensibiliser les personnes et les collectivités au problème des chats sans famille (dits « libres ») et des difficultés causées par leur prolifération.<br>En collaboration étroite avec la SPA de l’agglomération de Montpellier et l’association « Vétérinaires pour tous », le Conseil de Protection Féline de l’Hérault (CPF34) vient en aide à ces populations en les faisant stériliser et identifier.<br>Nous sollicitons les mairies et les collectivités locales pour faire appliquer l’article 211-27 du code rural qui leur donne les pleins pouvoirs pour la capture des chats non identifiés vivant en groupe dans des lieux publics afin de procéder à leur stérilisation et à leur identification.<br>Cette gestion raisonnée passe par des campagnes de stérilisation, avec remise sur les lieux des animaux sains.<br>Ces chats jouent un rôle non négligeable dans l’environnement (destructions des rongeurs, etc.) et auprès des humains (sentiment d’utilité pour les personnes qui les nourrissent). </p>
+
+
+
+<p>Les bénévoles de notre association les nourrissent, les soignent, mais surtout les font stériliser.<br>Depuis 2005, l’association a pu faire procéder à la stérilisation de 600 à 900 chats par an.<br>Devenez bénévole ou soutenez-nous financièrement ! </p>
+
+
+
+<h4><strong>Notre action:</strong><br><strong>Capturer, Stériliser, Identifier, Suivre.</strong> </h4>
+
+
+
+<p>Les bénévoles de l’association capturent les chats grâce à des cages pièges.<br>Les animaux sont ensuite amenés chez les vétérinaires qui procèdent à la stérilisation et à l’identification par tatouage.<br>Membres de l’association VETERINAIRE POUR TOUS, ces vétérinaires abandonnent une partie de leurs honoraires pour ces opérations. </p>
+
+
+
+<p>Puis suit une période de convalescence, un jour pour les mâles, trois jours pour les femelles. Elle se fait dans des parcs aux domiciles des bénévoles.<br>Les animaux sociables sont remis à la SPA, les autres sur leurs lieux de vie où les bénévoles assureront suivi sanitaire et alimentaire. </p>
+
+
+
+<h4><strong>Votre action:<br>Devenir bénévole, faire pression auprès de votre mairie, nous soutenir financièrement.</strong> </h4>
+
+
+
+<h4>Devenir bénévole</h4>
+
+
+
+<p>Participer aux captures, faire les allers retours chez les vétérinaires, accueillir en convalescence: votre aide sera précieuse&#8230; Et son coût pourra faire l’objet d’une déduction fiscale.</p>
+
+
+
+<h4><strong>Faire pression auprès de votre mairie</strong></h4>
+
+
+
+<p>Appeler les services généraux de votre mairie ou la police municipale pour signaler les chats sans maître: votre commune a l’obligation de gérer la population de chats errants sur son territoire.<br>Demander à ce qu’une convention de capture soit signée avec une association de protection féline, ou bien si c’est déjà fait, d’augmenter le montant de son aide.<br>Nous sommes là pour vous accompagner dans ces démarches. </p>
+
+
+
+<h4><strong>Nous soutenir financièrement</strong> </h4>
+
+
+
+<p>Faute de moyens, nous ne pourrons éviter la prolifération dans tous les lieux qui nous sont signalés.<br>Comme toutes les associations, nous avons grandement besoin de fonds.<br>Le CPF34 est une association d’intérêt général.<br>Pour les particuliers, les sommes versées ouvrent droit à une réduction d’impôt sur le revenu de 66% du montant dans la limite de 20% du revenu imposable. Au delà, l’excédent est reportable sur 5 ans.<br>(Article 200 du CGI)<br>Exemple: pour 100€ versés, 66 € se soustrairont à l’impôt dû. Votre don ne vous coûtera que 33€.<br>Pour les entreprises, les sommes versées ouvrent droit au crédit d’impôt mécénat de 60%.<br>(Article 238 bis du CGI) </p>
+
+
+
+<p><a href="https://cpf34.com/adhesion.php">Imprimez le Bulletin d&rsquo;adhésion</a>&nbsp;et envoyez-le accompagné de votre chèque à l&rsquo;ordre du « <strong>CPF34</strong> » à :</p>
+
+
+
+<p class="has-text-align-center"><strong>CPF34<br>662, Avenue de la Justice<br>34090 MONTPELLIER</strong> </p>
+
+
+
 	<div id="give-form-3659-wrap" class="give-form-wrap give-display-onpage">
 		<h2 class="give-form-title">Faire un don</h2><div class="give_error give_warning" id="give_error_test_mode"><p><strong>Avertissement</strong> Le mode de test est activé. En mode de test, aucune transaction réelle n’est effectuée.</p></div>			<form id="give-form-3659-1" class="give-form give-form-3659 give-form-type-set" action="/cpf34/?payment-mode=manual" data-id="3659-1" data-currency_symbol="&#36;" data-currency_code="USD" data-currency_position="before" data-thousands_separator="," data-decimal_separator="." data-number_decimals="2" method="post">
 				<!-- The following field is for robots only, invisible to humans: -->
@@ -545,7 +643,7 @@ par arrêté préfectoral, après avis favorable du Centre National d&rsquo;Etud
 			   value="1.00"/>
 		<input type="hidden" name="give-form-maximum"
 			   value="999999.99"/>
-		<input type="hidden"  name="give-form-hash" value="e0d14ff8dd" data-time="1584615382" data-nonce-life="86400" data-donor-session="0"/>		<div class="give-total-wrap">
+		<input type="hidden"  name="give-form-hash" value="a78a624e4c" data-time="1584625079" data-nonce-life="86400" data-donor-session="0"/>		<div class="give-total-wrap">
 			<div class="give-donation-amount form-row-wide">
 				<span class="give-currency-symbol give-currency-position-before">&#36;</span>				<label class="give-hidden" for="give-amount">Montant du don :</label>
 				<input class="give-text-input give-amount-top" id="give-amount" name="give-amount" type="tel"
@@ -736,7 +834,7 @@ Siren: 500 848 924</p>
 			   value="1.00"/>
 		<input type="hidden" name="give-form-maximum"
 			   value="999999.99"/>
-		<input type="hidden"  name="give-form-hash" value="e0d14ff8dd" data-time="1584615382" data-nonce-life="86400" data-donor-session="0"/>		<div class="give-total-wrap">
+		<input type="hidden"  name="give-form-hash" value="a78a624e4c" data-time="1584625079" data-nonce-life="86400" data-donor-session="0"/>		<div class="give-total-wrap">
 			<div class="give-donation-amount form-row-wide">
 				<span class="give-currency-symbol give-currency-position-before">&#36;</span>				<label class="give-hidden" for="give-amount">Montant du don :</label>
 				<input class="give-text-input give-amount-top" id="give-amount" name="give-amount" type="tel"
@@ -878,7 +976,12 @@ Siren: 500 848 924</p>
 </div><!-- .site-info -->
 	</footer>
 </div><!-- #page -->
-<link rel='stylesheet' id='jetpack-responsive-videos-style-css'  href='/cpf34/wp-content/plugins/jetpack/modules/theme-tools/responsive-videos/responsive-videos.css?ver=5.3.2' type='text/css' media='all' />
+
+
+
+    <div id="wpfront-scroll-top-container">
+        <img src="/cpf34/wp-content/plugins/wpfront-scroll-top/images/icons/114.png" alt="" />    </div>
+    <script type="text/javascript">function wpfront_scroll_top_init() {if(typeof wpfront_scroll_top == "function" && typeof jQuery !== "undefined") {wpfront_scroll_top({"scroll_offset":100,"button_width":32,"button_height":32,"button_opacity":0.8,"button_fade_duration":200,"scroll_duration":400,"location":1,"marginX":20,"marginY":20,"hide_iframe":false,"auto_hide":false,"auto_hide_after":2,"button_action":"top","button_action_element_selector":"","button_action_container_selector":"html, body","button_action_element_offset":0});} else {setTimeout(wpfront_scroll_top_init, 100);}}wpfront_scroll_top_init();</script><link rel='stylesheet' id='jetpack-responsive-videos-style-css'  href='/cpf34/wp-content/plugins/jetpack/modules/theme-tools/responsive-videos/responsive-videos.css?ver=5.3.2' type='text/css' media='all' />
 <link rel='stylesheet' id='wpforms-full-css'  href='/cpf34/wp-content/plugins/wpforms-lite/assets/css/wpforms-full.css?ver=1.5.9.1' type='text/css' media='all' />
 <script type='text/javascript'>
 /* <![CDATA[ */
@@ -886,6 +989,7 @@ var wpcf7 = {"apiSettings":{"root":"\/wp-json\/contact-form-7\/v1","namespace":"
 /* ]]> */
 </script>
 <script type='text/javascript' src='/cpf34/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.7'></script>
+<script type='text/javascript' src='/cpf34/wp-content/plugins/wpfront-scroll-top/js/wpfront-scroll-top.min.js?ver=2.0.2'></script>
 <script type='text/javascript' src='/cpf34/wp-content/themes/zeko-lite/assets/js/navigation.js?ver=1.0'></script>
 <script type='text/javascript' src='/cpf34/wp-content/themes/zeko-lite/assets/js/skip-link-focus-fix.js?ver=1.0'></script>
 <script type='text/javascript' src='/cpf34/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
